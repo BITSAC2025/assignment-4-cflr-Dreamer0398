@@ -19,6 +19,7 @@ int main(int argc, char **argv)
 
     SVFIRBuilder builder;
     auto pag = builder.build();
+    pag->dump();
 
     CFLR solver;
     solver.buildGraph(pag);
