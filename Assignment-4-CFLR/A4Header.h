@@ -172,6 +172,8 @@ public:
     void solve();
     /// Dump results into a file
     void dumpResult();
+    /// Add a new edge to the graph and push it to the worklist if it doesn't exist
+    void addNewEdge(unsigned src, unsigned dst, EdgeLabel label);
 };
 
 #endif //ANSWERS_A4HEADER_H
